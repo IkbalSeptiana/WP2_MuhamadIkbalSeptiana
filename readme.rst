@@ -1,71 +1,55 @@
 ###################
-What is CodeIgniter
+Latihan Pertemuan 3
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+********************************************************
+Penggunaan MVC, dan Parsing Data dari Controller ke View
+********************************************************
 
-*******************
-Release Information
-*******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Pada Pertemuan ke 3, kita melakukan penggunaan Model, View, dan Controller secara bersamaan setelah itu kita melakukan parsing data dari Controller ke View.
 
 ***************
-Acknowledgement
+Modified Files:
 ***************
+- `application/config/autoload.php`
+- `application/config/config.php`
+- `application/config/routes.php`
+- `readme.srt`
+**********
+New Files:
+**********
+- `.htaccess`
+- `application/controllers/Latihan1.php`
+- `application/controllers/Matakuliah.php`
+- `application/models/Model_latihan1.php`
+- `application/views/view-data-matakuliah.php`
+- `application/views/view-form-matakuliah.php`
+- `application/views/view-latihan1.php`
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+localhost/pustaka-booking/latihan1
+localhost/pustaka-booking/matakuliah
+
+
+###################
+Latihan Pertemuan 2
+###################
+
+****************
+membuat homepage
+****************
+
+Pada latihan pertemuan ke 2, kita membuat homepage dengan controller dan view, dan memasukkan gambar/assets lainnya
+
+localhost/pustaka-booking/homepage
+
+########
+Tugas #1
+########
+
+**************************
+Contoh Menampilkan Biodata
+**************************
+
+Pada tugas Pertemuan 1, kita diharuskan menginstall CodeIgniter 3. Saat penginstallan saya menemui kendala error, setelah saya baca-baca issue dari GitHub [CodeIgniter](https://github.com/bcit-ci/CodeIgniter), CodeIgniter 3 memang belum support untuk php versi 8.2 (saya menggunakan php versi 8.2) lalu saya ubah versi php ke versi 8.0 barulah CI 3 berjalan dengan lancar.
+
+Tugas Biodata terdapat di `/application/controllers/Contoh1.php`
