@@ -1,40 +1,42 @@
 <html>
     <head>
-        <title>Form Input Matakuliah</title>
+        <title>Form Input Menu</title>
     </head>
     <body>
         <center>
-            <form action="<?= base_url('matakuliah/cetak'); ?>"
+            <form action="<?= base_url('menu/cetak'); ?>"
             method="post">
                 <table>
                     <tr>
-                        <th colspan="3">Form Input Data Mata Kuliah</th>
+                        <th colspan="3">Form Input Data Menu</th>
                     </tr>
                     <tr>
                         <td colspan="3"><hr></td>
                     </tr>
                     <tr>
-                        <th>Kode MTK</th>
+                        <th>Kode Menu</th>
                         <th>:</th>
                         <td><input type="text" name="kode" id="kode" placeholder="Required">
                         <div class="col-sm-6 col-danger"> <?= form_error('kode'); ?></td>
                     </tr>
                     <tr>
-                        <th>Nama MTK</th>
+                        <th>Nama Menu</th>
                         <td>:</td>
                         <td><input type="text" name="nama" id="nama" placeholder="Required">
                         <div class="col-sm-6 col-danger"> <?= form_error('nama'); ?></td>
                     </tr>
                     <tr>
-                        <th>SKS</th>
-                        <td>:</td>
-                        <td><div class="col-sm-6 col-danger"><select name="sks" id="sks">
-                        <option value="" selected disabled>Pilih SKS</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        </select><?= form_error('sks'); ?>
-                        </td>
+                        <th>Harga</th>
+                        <th>:</th>
+                        <td><input type="text" name="harga" id="harga" placeholder="Required">
+                        <div class="col-sm-6 col-danger"> <?= form_error('harga'); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>:</th>
+                        <td>
+                        <input type="file" name="gambar" id="gambar">
+                        <div class="col-sm-6 col-danger"> <?= form_error('gambar'); ?></td>
                     </tr>
                     <tr>
                         <td colspan="3" align="center">

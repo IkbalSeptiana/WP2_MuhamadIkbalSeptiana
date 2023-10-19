@@ -7,7 +7,7 @@
             <table>
                 <tr>
                     <th colspan="3">
-                    Tampil Data Mata Kuliah
+                    Tampil Data Menu
                     </th>
                 </tr>
                 <tr>
@@ -16,29 +16,36 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Kode MTK</td>
+                    <td>Kode Menu</td>
                     <th>:</th>
                     <td>
                     <?= $kode; ?>
                     </td>
                 </tr>
                 <tr>
-                    <td>Nama MTK</td>
+                    <td>Nama Menu</td>
                     <td>:</td>
                     <td>
                     <?= $nama; ?>
                     </td>
                 </tr>
                 <tr>
-                    <td>SKS</td>
+                    <td>Harga</td>
                     <td>:</td>
                     <td>
-                    <?= $sks; ?>
+                    <?= $harga; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gambar</td>
+                    <td>:</td>
+                    <td>
+                    <img src="<?= base_url('assets/' . $gambar); ?>">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" align="center">
-                    <a href="<?= base_url('matakuliah'); 
+                    <a href="<?= base_url('menu'); 
                     ?>">Kembali</a>
                     </td>
                 </tr>
